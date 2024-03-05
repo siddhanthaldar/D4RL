@@ -4,8 +4,8 @@ from pybullet_envs import robot_bases
 
 class MJCFBasedRobot(robot_bases.XmlBasedRobot):
   """
-	Base class for mujoco .xml based agents.
-	"""
+    Base class for mujoco .xml based agents.
+    """
 
   def __init__(self, model_xml, robot_name, action_dim, obs_dim, self_collision=True):
     robot_bases.XmlBasedRobot.__init__(self, robot_name, action_dim, obs_dim, self_collision)

@@ -3,7 +3,7 @@
         1) https://github.com/vikashplus/franka
     which was originally written by Vikash Kumar and licensed under the Apache License= -->
 <mujocoinclude>
-	<body name="panda0_link0" childclass="panda" >
+    <body name="panda0_link0" childclass="panda" >
         <geom class="panda_viz" mesh="link0_viz"/>
         <geom class="panda_col" mesh="link0_col" mass="2.91242"/>
         <body name="panda0_link1" pos="0 0 0.333">

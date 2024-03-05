@@ -1,24 +1,24 @@
 <!-- ======================================================
-	Model 		:: ADROIT MANIPULATION PLATFORM
-		Sources		: Manipulator and Manipulation in High Dimensional Spaces. Vikash Kumar, Ph.D. Thesis, CSE, Univ. of Washington. 2016.
-					: Shadow robot company (https://github.com/shadow-robot/sr_common)
+    Model         :: ADROIT MANIPULATION PLATFORM
+        Sources        : Manipulator and Manipulation in High Dimensional Spaces. Vikash Kumar, Ph.D. Thesis, CSE, Univ. of Washington. 2016.
+                    : Shadow robot company (https://github.com/shadow-robot/sr_common)
  
-	Mujoco		:: Advanced physics simulation engine
-		Source		: www.roboti.us
-		Version		: 1.50
-		Released 	: 17Jan'17
-		
-	Author		:: Vikash Kumar
-		Contacts 	: vikash@cs.washington.edu
-		Last edits 	: 17Jan'17
+    Mujoco        :: Advanced physics simulation engine
+        Source        : www.roboti.us
+        Version        : 1.50
+        Released     : 17Jan'17
+        
+    Author        :: Vikash Kumar
+        Contacts     : vikash@cs.washington.edu
+        Last edits     : 17Jan'17
 
-	Copyright 	:: Vikash Kumar
-		Licensed under Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+    Copyright     :: Vikash Kumar
+        Licensed under Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 ====================================================== -->
 
 <mujocoinclude>
-	<!-- ================ ACTUATORS:: TENDON MOTORS ====================== -->
-	<actuator> 
+    <!-- ================ ACTUATORS:: TENDON MOTORS ====================== -->
+    <actuator> 
     <!--Act_force  = gear * gainprm * ctrl :: gainprm = cylinder_max_force :: gear=1:: direct attachment -->
     <!--Jnt_torque = tendon moment * Act_force-->
     <!-- ctrl_range = [-1 0] = as you can only pull -->
@@ -77,47 +77,47 @@
     </actuator>
 
 
-	<sensor>
-	<!-- ======= Tendon Actuator Force Sensors ======= -->
-		<actuatorfrc name="Saf_WRJ1r" actuator="A_WRJ1r"/>
-		<actuatorfrc name="Saf_WRJ1l" actuator="A_WRJ1l"/>
-		<actuatorfrc name="Saf_WRJ0d" actuator="A_WRJ0d"/>
-		<actuatorfrc name="Saf_WRJ0u" actuator="A_WRJ0u"/>
-		<actuatorfrc name="Saf_FFJ3l" actuator="A_FFJ3l"/>
-		<actuatorfrc name="Saf_FFJ3r" actuator="A_FFJ3r"/>
-		<actuatorfrc name="Saf_FFJ2u" actuator="A_FFJ2u"/>
-		<actuatorfrc name="Saf_FFJ2d" actuator="A_FFJ2d"/>
-		<actuatorfrc name="Saf_FFJ1u" actuator="A_FFJ1u"/>
-		<actuatorfrc name="Saf_FFJ1d" actuator="A_FFJ1d"/>
-		<actuatorfrc name="Saf_MFJ3l" actuator="A_MFJ3l"/>
-		<actuatorfrc name="Saf_MFJ3r" actuator="A_MFJ3r"/>
-		<actuatorfrc name="Saf_MFJ2u" actuator="A_MFJ2u"/>
-		<actuatorfrc name="Saf_MFJ2d" actuator="A_MFJ2d"/>
-		<actuatorfrc name="Saf_MFJ1u" actuator="A_MFJ1u"/>
-		<actuatorfrc name="Saf_MFJ1d" actuator="A_MFJ1d"/>
-		<actuatorfrc name="Saf_RFJ3l" actuator="A_RFJ3l"/>
-		<actuatorfrc name="Saf_RFJ3r" actuator="A_RFJ3r"/>
-		<actuatorfrc name="Saf_RFJ2u" actuator="A_RFJ2u"/>
-		<actuatorfrc name="Saf_RFJ2d" actuator="A_RFJ2d"/>
-		<actuatorfrc name="Saf_RFJ1u" actuator="A_RFJ1u"/>
-		<actuatorfrc name="Saf_RFJ1d" actuator="A_RFJ1d"/>
-		<actuatorfrc name="Saf_LFJ4u" actuator="A_LFJ4u"/>
-		<actuatorfrc name="Saf_LFJ4d" actuator="A_LFJ4d"/>
-		<actuatorfrc name="Saf_LFJ3l" actuator="A_LFJ3l"/>
-		<actuatorfrc name="Saf_LFJ3r" actuator="A_LFJ3r"/>
-		<actuatorfrc name="Saf_LFJ2u" actuator="A_LFJ2u"/>
-		<actuatorfrc name="Saf_LFJ2d" actuator="A_LFJ2d"/>
-		<actuatorfrc name="Saf_LFJ1u" actuator="A_LFJ1u"/>
-		<actuatorfrc name="Saf_LFJ1d" actuator="A_LFJ1d"/>
-		<actuatorfrc name="Saf_THJ4a" actuator="A_THJ4a"/>
-		<actuatorfrc name="Saf_THJ4c" actuator="A_THJ4c"/>
-		<actuatorfrc name="Saf_THJ3u" actuator="A_THJ3u"/>
-		<actuatorfrc name="Saf_THJ3d" actuator="A_THJ3d"/>
-		<actuatorfrc name="Saf_THJ2u" actuator="A_THJ2u"/>
-		<actuatorfrc name="Saf_THJ2d" actuator="A_THJ2d"/>
-		<actuatorfrc name="Saf_THJ1l" actuator="A_THJ1l"/>
-		<actuatorfrc name="Saf_THJ1r" actuator="A_THJ1r"/>
-		<actuatorfrc name="Saf_THJ0l" actuator="A_THJ0l"/>
-		<actuatorfrc name="Saf_THJ0r" actuator="A_THJ0r"/>
-	</sensor>
+    <sensor>
+    <!-- ======= Tendon Actuator Force Sensors ======= -->
+        <actuatorfrc name="Saf_WRJ1r" actuator="A_WRJ1r"/>
+        <actuatorfrc name="Saf_WRJ1l" actuator="A_WRJ1l"/>
+        <actuatorfrc name="Saf_WRJ0d" actuator="A_WRJ0d"/>
+        <actuatorfrc name="Saf_WRJ0u" actuator="A_WRJ0u"/>
+        <actuatorfrc name="Saf_FFJ3l" actuator="A_FFJ3l"/>
+        <actuatorfrc name="Saf_FFJ3r" actuator="A_FFJ3r"/>
+        <actuatorfrc name="Saf_FFJ2u" actuator="A_FFJ2u"/>
+        <actuatorfrc name="Saf_FFJ2d" actuator="A_FFJ2d"/>
+        <actuatorfrc name="Saf_FFJ1u" actuator="A_FFJ1u"/>
+        <actuatorfrc name="Saf_FFJ1d" actuator="A_FFJ1d"/>
+        <actuatorfrc name="Saf_MFJ3l" actuator="A_MFJ3l"/>
+        <actuatorfrc name="Saf_MFJ3r" actuator="A_MFJ3r"/>
+        <actuatorfrc name="Saf_MFJ2u" actuator="A_MFJ2u"/>
+        <actuatorfrc name="Saf_MFJ2d" actuator="A_MFJ2d"/>
+        <actuatorfrc name="Saf_MFJ1u" actuator="A_MFJ1u"/>
+        <actuatorfrc name="Saf_MFJ1d" actuator="A_MFJ1d"/>
+        <actuatorfrc name="Saf_RFJ3l" actuator="A_RFJ3l"/>
+        <actuatorfrc name="Saf_RFJ3r" actuator="A_RFJ3r"/>
+        <actuatorfrc name="Saf_RFJ2u" actuator="A_RFJ2u"/>
+        <actuatorfrc name="Saf_RFJ2d" actuator="A_RFJ2d"/>
+        <actuatorfrc name="Saf_RFJ1u" actuator="A_RFJ1u"/>
+        <actuatorfrc name="Saf_RFJ1d" actuator="A_RFJ1d"/>
+        <actuatorfrc name="Saf_LFJ4u" actuator="A_LFJ4u"/>
+        <actuatorfrc name="Saf_LFJ4d" actuator="A_LFJ4d"/>
+        <actuatorfrc name="Saf_LFJ3l" actuator="A_LFJ3l"/>
+        <actuatorfrc name="Saf_LFJ3r" actuator="A_LFJ3r"/>
+        <actuatorfrc name="Saf_LFJ2u" actuator="A_LFJ2u"/>
+        <actuatorfrc name="Saf_LFJ2d" actuator="A_LFJ2d"/>
+        <actuatorfrc name="Saf_LFJ1u" actuator="A_LFJ1u"/>
+        <actuatorfrc name="Saf_LFJ1d" actuator="A_LFJ1d"/>
+        <actuatorfrc name="Saf_THJ4a" actuator="A_THJ4a"/>
+        <actuatorfrc name="Saf_THJ4c" actuator="A_THJ4c"/>
+        <actuatorfrc name="Saf_THJ3u" actuator="A_THJ3u"/>
+        <actuatorfrc name="Saf_THJ3d" actuator="A_THJ3d"/>
+        <actuatorfrc name="Saf_THJ2u" actuator="A_THJ2u"/>
+        <actuatorfrc name="Saf_THJ2d" actuator="A_THJ2d"/>
+        <actuatorfrc name="Saf_THJ1l" actuator="A_THJ1l"/>
+        <actuatorfrc name="Saf_THJ1r" actuator="A_THJ1r"/>
+        <actuatorfrc name="Saf_THJ0l" actuator="A_THJ0l"/>
+        <actuatorfrc name="Saf_THJ0r" actuator="A_THJ0r"/>
+    </sensor>
 </mujocoinclude>

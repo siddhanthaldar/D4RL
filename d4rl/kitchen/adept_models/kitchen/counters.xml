@@ -6,7 +6,7 @@
     <worldbody>
 
         <body>
-		    <include file="../kitchen/assets/counters_chain.xml"/>
+            <include file="../kitchen/assets/counters_chain.xml"/>
         </body>
 
     </worldbody>

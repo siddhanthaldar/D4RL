@@ -18,7 +18,7 @@
 <!--limitations under the License.-->
 
 <mujocoinclude>
-	<body name="_panda0_link0" childclass="panda_overlay" >
+    <body name="_panda0_link0" childclass="panda_overlay" >
         <geom mesh="link0_viz"/>
         <body name="_panda0_link1" pos="0 0 0.333">
             <joint name="_panda0_joint1" range="-2.8973 2.8973"/>

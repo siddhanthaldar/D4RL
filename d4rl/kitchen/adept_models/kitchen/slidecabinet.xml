@@ -6,7 +6,7 @@
     <worldbody>
 
         <body pos="0 0 .25">
-		    <include file="../kitchen/assets/slidecabinet_chain.xml"/>
+            <include file="../kitchen/assets/slidecabinet_chain.xml"/>
         </body>
 
     </worldbody>
